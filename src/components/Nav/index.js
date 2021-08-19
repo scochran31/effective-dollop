@@ -1,5 +1,5 @@
 import { Box, Text, Flex } from '@chakra-ui/react'
-import Menu from './Menu'
+// import Menu from './Menu'
 import { ColorModeSwitcher } from '../../ColorModeSwitcher'
 import React from 'react'
 
@@ -18,7 +18,7 @@ const Nav = () => {
         //         <ColorModeSwitcher />
         //     </Box>
         // </Heading>
-        <Flex justify='space-between' bgGradient='linear(to-r, orange.200, blue.300)' p={5} h='auto' align='center' justify='space-between'>
+        <Flex justify='space-between' bgGradient='linear(to-r, orange.200, blue.300)' p={5} h='auto' align='center'>
             {/* <Box>
                 <Menu />
             </Box> */}
