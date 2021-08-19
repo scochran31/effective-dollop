@@ -1,22 +1,22 @@
 import { Text, Container, Flex, Box, Image, ListItem, UnorderedList, HStack } from '@chakra-ui/react'
 import React from 'react'
-import Me from '../../Assets/image/shawn.png'
+import Me from '../../assets/image/shawn.png'
 
 function About() {
     return (
         <Flex spacing='15px' justify='space-evenly' align='center' p={5} wrap='wrap'>
             <Box>
-                <Text fontSize='40px'>
+                <Text pr='2' fontSize='40px'>
                     About Me
                 </Text>
             </Box>
             <Box>
                 <Container fontSize='20px'>
-                    Hi, I am Shawn. I have been pursuing a Web Development certificate through the Coding Bootcamp at the University of Utah. I have spent the last six months learning web development with heavy emphasis on the Javascript language.
+                    Hi, I am Shawn Cochran. I have been pursuing a Web Development certificate through the Coding Bootcamp at the University of Utah. I have spent the last six months learning web development with heavy emphasis on the Javascript language.
 
                     Other skills developed:
                 </Container>
-                <HStack justify='space-evenly' fontSize='20px'>
+                <HStack justify='space-evenly' fontSize='20px' p={5}>
                     <Box>
                         <UnorderedList>
                             <ListItem>HTML</ListItem>
@@ -40,7 +40,12 @@ function About() {
                 </Container>
             </Box>
             <Box>
-                <Image src={Me} alt='Shawn' h={240} w={200} fallbackSrc="https://via.placeholder.com/150" />
+                <Image
+                    src={Me}
+                    alt='Shawn'
+                    h={240} w={200}
+                    boxShadow='dark-lg'
+                    fallbackSrc="https://via.placeholder.com/150" />
             </Box>
         </Flex>
     )

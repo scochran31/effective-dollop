@@ -1,6 +1,6 @@
 import { Center, Image, Link } from '@chakra-ui/react'
-import gh from '../../Assets/footerImg/GitHub.png'
-import In from '../../Assets/footerImg/in.png'
+import gh from '../../assets/footerImg/GitHub.png'
+import In from '../../assets/footerImg/in.png'
 import React from 'react'
 
 function Footer() {
