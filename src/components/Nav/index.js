@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Link, Container } from '@chakra-ui/react'
+import { Box, Text, Flex, Link, Container, Menu } from '@chakra-ui/react'
 // import Menu from './Menu'
 import { ColorModeSwitcher } from '../../ColorModeSwitcher'
 import React, { useEffect } from 'react'
@@ -21,11 +21,19 @@ function Nav(props) {
                     <a href='/'>Shawn Cochran's Portfolio</a>
                 </Text>
             </Box>
-            <Box display='inline-flex'>
+            <Box display='inline-list-item'>
                 <Container align='center'>
                     <Link href='#about'>About Me</Link>
                 </Container>
-                {categories.map((category) => (
+                <Container align='center'>
+                    <Link href='#portfolio'>
+                        Portfolio
+                    </Link>
+                </Container>
+                <Container align='center'>
+
+                </Container>
+                {/* {categories.map((category) => (
                     <Box display='inline-flex'
                         className={`${currentCategory.name === category.name && 'navActive'}`}
                         key={category.name}
@@ -36,7 +44,7 @@ function Nav(props) {
                             {category.name}
                         </Text>
                     </Box>
-                ))}
+                ))} */}
             </Box>
             <Box>
                 <ColorModeSwitcher />

@@ -1,27 +1,22 @@
 import React from 'react'
 import { Flex, Box, Text } from '@chakra-ui/layout';
 import ProjectList from '../ProjectList';
+import { Container } from '@chakra-ui/react';
 
 function Portfolio(props) {
     const { currentCategory } = props;
     return (
-        <Flex spacing='15px' justify='space-evenly' align='center' p={5} display='flex'>
-            <Box>
+        <Flex wrap='nowrap' align='center' justify='space-evenly' p={5} id='portfolio'>
+            <Box justify='center' align='center'>
                 <Text pr={2} fontSize='40px'>
                     Portfolio
                 </Text>
             </Box>
-            <Box>
-
-                <ProjectList project={currentCategory.name} />
-                <a href={currentCategory.link}>
-                    <img src={currentCategory.img} />
+            <Box p={5}>
+                <Container maxW='100ch'>
+                    <ProjectList project={currentCategory.name} />
                     <Text>{currentCategory.name}</Text>
-                </a>
-
-            </Box>
-            <Box>
-                Something else
+                </Container>
             </Box>
         </Flex>
     )
