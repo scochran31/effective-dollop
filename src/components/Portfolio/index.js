@@ -6,7 +6,7 @@ import { Container } from '@chakra-ui/react';
 function Portfolio(props) {
     const { currentCategory } = props;
     return (
-        <Flex wrap='nowrap' align='center' justify='space-evenly' p={5} id='portfolio'>
+        <Flex align='center' justify='space-evenly' p={5} id='portfolio'>
             <Box justify='center' align='center'>
                 <Text pr={2} fontSize='40px'>
                     Portfolio

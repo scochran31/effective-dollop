@@ -1,4 +1,4 @@
-import { Grid, Image, Text, GridItem, Link } from '@chakra-ui/react';
+import { Grid, Image, Text, GridItem, Link, Flex } from '@chakra-ui/react';
 import React from 'react'
 import MERN from '../../assets/image/portfolio/MERN.jpg'
 import Javascript from '../../assets/image/portfolio/Javascript.jpg'
@@ -39,6 +39,7 @@ const ProjectList = () => {
 
 
     return (
+        <Flex>
         <Grid
             h={400}
             templateRows='repeat(4, 2fr)'
@@ -47,35 +48,36 @@ const ProjectList = () => {
             p={15}
         >
             <GridItem rowSpan={2} colSpan={3}>
-                <Link href={projects[0].link}>
+                    <Link href={projects[0].link} target='_blank'>
                     <Image src={MERN} objectFit='contain' />
                     <Text fontSize='xl'>{projects[0].name}</Text></Link>
             </GridItem>
             <GridItem rowSpan={2} colSpan={3}>
-                <Link href={projects[1].link}>
+                    <Link href={projects[1].link} target='_blank'>
                     <Image src={Javascript} />
                     <Text fontSize='xl'>{projects[1].name}</Text>
                 </Link>
             </GridItem>
             <GridItem rowSpan={2} colSpan={3}>
-                <Link href={projects[2].link}>
+                    <Link href={projects[2].link} target='_blank'>
                     <Image src={Node} />
                     <Text fontSize='xl'>{projects[2].name}</Text>
                 </Link>
             </GridItem>
             <GridItem rowSpan={2} colSpan={3}>
-                <Link href={projects[3].link}>
+                    <Link href={projects[3].link} target='_blank'>
                     <Image src={Express} />
                     <Text fontSize='xl'>{projects[3].name}</Text>
                 </Link>
             </GridItem>
             <GridItem rowSpan={2} colSpan={3}>
-                <Link href={projects[4].link}>
+                    <Link href={projects[4].link} target='_blank'>
                     <Image src={MongoDB} />
                     <Text fontSize='xl'>{projects[4].name}</Text>
                 </Link>
             </GridItem>
         </Grid>
+        </Flex>
     )
 }
 

@@ -1,5 +1,5 @@
 import { Box, Text, Flex, Link, Container } from '@chakra-ui/react'
-import { ColorModeSwitcher } from '../../ColorModeSwitcher'
+// import { ColorModeSwitcher } from '../../ColorModeSwitcher'
 import Contact from '../Contact'
 import React, { useEffect } from 'react'
 
@@ -48,9 +48,9 @@ function Nav(props) {
                     <Contact />
                 </Container>
             </Box>
-            <Box>
+            {/* <Box>
                 <ColorModeSwitcher />
-            </Box>
+            </Box> */}
         </Flex>
 
     )

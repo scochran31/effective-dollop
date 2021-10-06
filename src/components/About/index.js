@@ -1,6 +1,6 @@
 import { Text, Container, Flex, Box, Image, ListItem, UnorderedList, HStack } from '@chakra-ui/react'
 import React from 'react'
-import Me from '../../assets/image/shawn.png'
+// import Me from '../../assets/image/shawn.png'
 
 function About() {
     return (
@@ -12,9 +12,7 @@ function About() {
             </Box>
             <Box>
                 <Container fontSize='20px'>
-                    Hi, I am Shawn Cochran. I have been pursuing a Web Development certificate through the Coding Bootcamp at the University of Utah. I have spent the last six months learning web development with heavy emphasis on the Javascript language.
-
-                    Other skills developed:
+                    Hi, I am Shawn Cochran. I have completed a Web Development certificate through the Coding Bootcamp at the University of Utah. Technical skills that I learned and developed:
                 </Container>
                 <HStack justify='space-evenly' fontSize='20px' p={5}>
                     <Box>
@@ -39,14 +37,14 @@ function About() {
                     Just as important as learning and understanding the concepts taught in this class, I have also learned how to research, study, parse documentation and data, and I have learned how to implement that information. I am dedicated to quality results and continuing my education and learning to become more proficient and a more valuable asset in whatever I am pursuing.
                 </Container>
             </Box>
-            <Box>
+            {/* <Box>
                 <Image
                     src={Me}
                     alt='Shawn'
                     h={240} w={200}
                     boxShadow='dark-lg'
                     fallbackSrc="https://via.placeholder.com/150" />
-            </Box>
+            </Box> */}
         </Flex>
     )
 }
